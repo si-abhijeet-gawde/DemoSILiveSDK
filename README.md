@@ -1,4 +1,4 @@
-# SILiveStream
+# SILiveSDK
 
 A SwiftUI SDK for live stream playback with Brightcove, including pre-live image/video and an overlay with back button and title/subtitle.
 
@@ -8,14 +8,14 @@ A SwiftUI SDK for live stream playback with Brightcove, including pre-live image
 - Swift 5
 - Xcode 14+
 
+
 ## Installation
 
-### Swift Package Manager (XCFramework)
-
-1. Add the package to your project (File → Add Package Dependencies)
-2. Add **SILiveStream** to your app target.
-3. Add **BrightcovePlayerSDK** (required): **File → Add Package Dependencies** → URL `https://github.com/brightcove/brightcove-player-sdk-ios` → add **BrightcovePlayerSDK** to your app target.
-4. **Required for device and archive:** In your app target → **General** → **Frameworks, Libraries, and Embedded Content**, set **SILiveStream** to **Embed & Sign**.
+- Swift Package Manager (XCFramework)
+- Add the package via Xcode:
+- File → Add Package Dependencies
+- Use this repository URL:
+    https://github.com/si-abhijeet-gawde/DemoSILiveSDK
 
 ---
 
@@ -25,7 +25,7 @@ A SwiftUI SDK for live stream playback with Brightcove, including pre-live image
 
 ```swift
 import SwiftUI
-import SILiveStream
+import SILiveSDK
 ```
 
 ### 2. Add `LiveStreamView` to your UI
@@ -64,3 +64,4 @@ struct ContentView: View {
         }
     }
 }
+

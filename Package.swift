@@ -2,19 +2,19 @@
 import PackageDescription
 
 let package = Package(
-    name: "SILiveStream",
+    name: "SILiveSDK",
     platforms: [.iOS(.v15)],
     products: [
         .library(
-            name: "SILiveStream",
-            targets: ["SILiveStreamBinary"]
+            name: "SILiveSDK",
+            targets: ["SILiveSDKBinary"]
         )
     ],
     dependencies: [],
     targets: [
         .binaryTarget(
-            name: "SILiveStreamBinary",
-            path: "Binaries/SILiveStream.xcframework"
+            name: "SILiveSDKBinary",
+            path: "Binaries/SILiveSDK.xcframework"
         )
     ]
 )
